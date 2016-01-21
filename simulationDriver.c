@@ -46,7 +46,6 @@
 #include <string.h>
 #include "simulation.h"
 
-
 // MAIN PROGRAM FOR DRIVER
 int main(int argc, char *argv[])
 {
@@ -325,7 +324,7 @@ NodeLL *allocateNodeLL(LinkedList list, Event value)
     NodeLL *pNew;
     pNew = (NodeLL *)malloc(sizeof(NodeLL));
     if (pNew == NULL)
-        //ErrExit(ERR_ALGORITHM, "No available memory for linked list");
+        ErrExit(ERR_ALGORITHM, "No available memory for linked list");
     pNew->event = value;
     pNew->pNext = NULL;
     return pNew;
@@ -355,7 +354,7 @@ NodeLL *allocateNodeLL(LinkedList list, Event value)
      - Requires including <stdarg.h>
  Returns:
      Returns a program exit return code:  the value of iexitRC.
- **************************************************************************
+ **************************************************************************/
 void ErrExit(int iexitRC, char szFmt[], ... )
 {
     va_list args;               // This is the standard C variable argument list type
@@ -368,7 +367,7 @@ void ErrExit(int iexitRC, char szFmt[], ... )
                                 // va_list argument
     printf("\n");
     exit(iexitRC);
-} */
+}
 
 /******************** exitUsage *****************************
  void exitUsage(int iArg, char *pszMessage, char *pszDiagnosticInfo)
