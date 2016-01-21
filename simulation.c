@@ -1,5 +1,5 @@
 /****************************************************************
- cs2123p4.c written by: Kurt King                     3-20-2015
+ cs2123p4.c written by: Kurt King                  March 20, 2015
  
  Purpose:
      This program takes widgets from a file and runs simulations on
@@ -19,7 +19,6 @@
  Results/Returns:
     Runs a simulation on the widget information scanned in from file
  Notes:
-    1. THIS FILE CONTAINS FUNCTIONS I WROTE FOR PROGRAM 4
  ****************************************************************/
 // If compiling using visual studio, tell the compiler not to give its warnings
 // about the safety of scanf and printf
@@ -27,7 +26,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "cs2123p4.h"
+#include "simulation.h"
 
 /******************** newSimulation ******************************
  Simulation newSimulation()

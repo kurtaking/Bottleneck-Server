@@ -148,7 +148,7 @@ typedef SimulationImp *Simulation;
 
 /**********   prototypes ***********/
 
-// linked list functions - you must provide the code for these (see course notes)
+// linked list functions 
 int removeLL(LinkedList list, Event  *pValue);
 NodeLL *insertOrderedLL(LinkedList list, Event value);
 NodeLL *searchLL(LinkedList list, int match, NodeLL **ppPrecedes);
@@ -165,7 +165,7 @@ Queue newQueue(char szQueueNm[]);
 Simulation newSimulation();
 Server newServer(char szServerNm[]);
 
-// simulation functions - you must provide code for this
+// simulation functions 
 void runSimulationA(Simulation simulation, int iTimeLimit);
 void runSimulationBC(Simulation simulation, int iTimeLimit);
 void generateArrival(Simulation sim);
@@ -176,9 +176,7 @@ void release(Simulation sim, Queue queueTeller, Server serverTeller, Widget *wid
 void leaveSystem(Simulation sim, Widget widget);
 void printStatistics(Simulation sim, Queue queue1, Queue queue2);
 
-// functions in most programs, but require modifications
+// Utility routines provided by Larry Clark 
+void ErrExit(int iexitRC, char szFmt[], ...);
 void exitUsage(int iArg, char *pszMessage, char *pszDiagnosticInfo);
 Simulation processSwitches(int argc, char *argv[]);
-
-// Utility routines provided by Larry (copy from program #2)
-void ErrExit(int iexitRC, char szFmt[], ...);

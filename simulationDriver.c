@@ -1,8 +1,8 @@
 /****************************************************************
  cs2123p4Driver.c written by: Kurt King              3-20-2015
- DRIVER FILE
+ 
  Purpose:
-     The driver file for this program includes the
+     The driver file for this program
  Input:
      1. Input A (same for alternatives A and current) - p4ACinput.txt
           lWidgetNr   iStep1tu    iStep2tu    iArrivalDelta
@@ -44,7 +44,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-#include "cs2123p4.h"
+#include "simulation.h"
 
 
 // MAIN PROGRAM FOR DRIVER
