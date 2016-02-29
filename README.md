@@ -24,12 +24,13 @@ The downtime to reconfigure is expected to be the same for both alternatives so 
 ------------
 | File Name | File Description |
 | --------- | ---------------- |
-| simulation.h | text |
-| simulation.c | text |
-| simulationDriver.c | text | 
-| p4ACinput.txt | text |
-| p4Binput.txt | text | 
-| Makefile | text |
+| simulation.h | Header file - contains typedefs, constants, and function prototypes |
+| simulation.c | Bottleneck simulation functions |
+| simulationDriver.c | Driver file - contains main function and functions to handle input | 
+| p4ACinput.txt | Input for running simulations A and C |
+| p4Binput.txt | Input for running simulation B |
+| sim | Executable produced when using makefile |
+| Makefile | Compiles and links appropriate files to create the executable to run the bottleneck simulation |
 
 ## III. General Purpose
 This program takes widgets from a file and runs simulations on them. The output of the program
