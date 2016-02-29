@@ -23,7 +23,13 @@ The downtime to reconfigure is expected to be the same for both alternatives so 
 ## II. File List
 ------------
 | File Name | File Description |
-| --------- | ---------------- | 
+| --------- | ---------------- |
+| simulation.h | text |
+| simulation.c | text |
+| simulationDriver.c | text | 
+| p4ACinput.txt | text |
+| p4Binput.txt | text | 
+| Makefile | text |
 
 ## III. General Purpose
 This program takes widgets from a file and runs simulations on them. The output of the program
@@ -47,19 +53,3 @@ There is a general Makefile for the simulation.
 
     This will create the executable sim in your current directory
     Refer to running simulation to execute program
-
-
-
-Specifications for running program:
-    (Text needs to be updates)
-
-Data Structures:
-    This program implements linked lists and queues
-
-Program Layout:
-    simulationDriver.c
-        (info coming soon)
-    simulation.c
-        (info coming soon)
-    simulation.h
-        (info coming soon)
