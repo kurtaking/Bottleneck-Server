@@ -30,6 +30,24 @@ This program takes widgets from a file and runs simulations on them. The output 
 shows the statistics for each simulation. Judging by the statistics, the user would be able to
 specify which simulation is the most efficient.
 
+## IV. Key Functions
+coming soon
+
+## V. Important Typedefs
+coming soon
+
+## VI. Input/Output
+coming soon
+
+## VII. Makefile
+There is a general Makefile for the simulation.
+
+    Once changes have been made to a file, simple run:
+        $ make sim
+
+    This will create the executable sim in your current directory
+    Refer to running simulation to execute program
+
 
 
 Specifications for running program:
@@ -45,12 +63,3 @@ Program Layout:
         (info coming soon)
     simulation.h
         (info coming soon)
-
-Makefile:
-    There is a general Makefile for the simulation.
-
-    Once changes have been made to a file, simple run:
-        $ make sim
-
-    This will create the executable sim in your current directory
-    Refer to running simulation to execute program
